@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        form{
+            background-color: aquamarine;
+            width: 400px; /* Set the width of the form */
+            height:90%;
+            margin: 50px auto; /* Center the form horizontally */
+            padding: 20px;
+            border: 5px solid #ccc; /* Add a border for better visibility */
+            border-radius: 10px; /* Rounded corners */
+        }
+    </style>
+</head>
+<body>
+    <div class="formclass">
+    
+    <form id="signupform">
+        <h1 style="text-align: center;"><u>SIGN UP-New user</u></h1>
+    <label for="fname">First Name:</label>&nbsp;
+    <input  id="fname" name="fname" ><br><br>
+
+    <label for="lname">Last Name:</label>&nbsp;
+    <input type="text" id="lname" name="lname" ><br><br>
+
+    <label for="uname">Choose your Username:</label>&nbsp;<br>
+    <input type="text" id="uname" name="uname" >&nbsp; @mail.com<br><br>
+
+    <label for="cpass">Create a password:</label>&nbsp;
+    <input type="text" id="cpass" name="cpass" ><br><br>
+
+    <label for="conpass">Confirm password:</label>&nbsp;
+    <input type="text" id="conpass" name="conpass" ><br><br>
+    
+
+    <label for="dob"><strong>DOB:</strong></label><br>
+    <select id="day" name="day">
+        <!-- You can add options from 1 to 31 for day selection -->
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+        <option value="11">11</option>
+        <option value="12">12</option>
+        <!-- Add more options up to 31 -->
+    </select>
+
+    <select id="month" name="month">
+        <!-- Options for month selection -->
+        <option value="January">January</option>
+        <option value="February">February</option>
+        <option value="March">March</option>
+        <option value="April">April</option>
+        <option value="May">May</option>
+        <option value="June">June</option>
+        <option value="July">July</option>
+        <option value="August">August</option>
+        <option value="September">September</option>
+        <option value="October">October</option>
+        <option value="November">November</option>
+        <option value="December">December</option>
+    </select>
+
+    <select id="year" name="year">
+        <!-- Options for year selection -->
+        <option value="2001">2001</option>
+        <option value="2000">2000</option>
+        <option value="1999">1999</option>
+        <option value="1998">1998</option>
+        <!-- Add more options as needed -->
+    </select><br><br>
+    <h4>Gender:</h4>
+    <input type="radio" id="male" name="fav_language" value="HTML">
+    <label for="html">Male</label>
+    <input type="radio" id="female" name="fav_language" value="HTML">
+    <label for="html">Female</label><br><br>
+    
+
+    
+    <label for="mph">Mobile Phone:</label><br>
+    <input type="text" id="mph" name="mph" ><br>
+    <label for="ema">Your current Email address:</label><br>
+    <input type="text" id="ema" name="ema" ><br><br>
+    <label for="agree">
+        <input type="checkbox" id="agree" name="agree">
+        <strong>Set google as my home page</strong><br><br>
+    </label>
+    <label for="dob"><strong>LOCATION:</strong></label>&nbsp;
+    <select id="loc" name="loc">
+        <!-- You can add options from 1 to 31 for day selection -->
+        <option value="Ind">India</option>
+        <option value="Pak">Pakisthan</option>
+        <option value="Chi">China</option>
+    
+    </select><br><br>
+    <label for="comm" >Comments:</label><br>
+    <textarea id="Comments:" name="Comments:"  rows="4" ></textarea><br>
+    <strong>Upload photo</strong>&nbsp;&nbsp;
+    <button>
+        Choose file
+    </button><br><br>
+    <button id="sub">
+        Submit
+    </button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <button id="reset">Reset</button>
+    </form>
+    </div>
+    <script src="signup.js"></script>
+</body>
+</html>
